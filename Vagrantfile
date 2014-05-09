@@ -9,6 +9,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
   config.vm.network :forwarded_port, guest: 80, host: 8080
   config.vm.synced_folder "./", "/vagrant"
+  config.vm.synced_folder "./", "/home/vagrant/workspace/src/github.com/Midskiller/bloodboiler"
+  config.vm.synced_folder "./bin", "/home/vagrant/workspace/bin"
   config.vm.provision "shell", path: "bootstrap.sh"
   
   # All Vagrant configuration is done here. The most common configuration
