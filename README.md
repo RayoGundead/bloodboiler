@@ -3,5 +3,5 @@ Midskiller Bloodboiler
 
 Authors
 -------
-- RayoGundead
-- SetsunaKiri
+- [RayoGundead](https://github.com/RayoGundead)
+- [SetsunaKiri](https://github.com/SetsunaKiri)
