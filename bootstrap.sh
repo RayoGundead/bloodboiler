@@ -15,10 +15,12 @@ rm -v go1.2.2.linux-amd64.tar.gz
   
 # set PATH so it includes GoLang bin if it exists
 if [ -d "/usr/local/go/bin" ] ; then
-    GOPATH=/vagrant
+    GOPATH=/home/vagrant/workspace
     PATH="\$PATH:/usr/local/go/bin:$GOPATH/bin"
 fi
 EOF
 ) >> /home/vagrant/.profile
+
+mkdir /home/vagrant/workspace/pkg
 
 export PATH=$PATH:/usr/local/go/bin
